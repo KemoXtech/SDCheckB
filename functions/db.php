@@ -1,9 +1,9 @@
 <?php
 
 
-include_once dirname(__FILE__) ."/../functions/bot.php";
-include dirname(__FILE__)."/../config/variables.php";
-include dirname(__FILE__)."/../config/config.php";
+require_once dirname(__FILE__)."/../../functions/bot.php";
+require dirname(__FILE__)."/../../config/variables.php";
+require dirname(__FILE__)."/../../config/config.php";
 
 ///////////==[DB Connection]==///////////
 $conn = mysqli_connect($config['db']['hostname'],$config['db']['username'],$config['db']['password'],$config['db']['database']);
