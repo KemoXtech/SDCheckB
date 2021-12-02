@@ -8,7 +8,7 @@ $message_id = $update["message"]["message_id"];
 $userId = $update["message"]["from"]["id"];
 $username = $update["message"]["from"]["username"];
 $firstname = $update["message"]["from"]["first_name"];
-$start_msg = $_ENV['START_MSG']; 
+
 $chattype = $update["message"]["chat"]["type"];
 $lastname = $update["message"]["from"]["last_name"];
 $data = $update["callback_query"]["data"];
