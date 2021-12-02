@@ -1,22 +1,14 @@
 <?php
 
-$update = json_decode(file_get_contents("php://input"));
-
-$chat_id = $update->message->chat->id;
-
-$userId = $update->message->from->id;
-
-$firstname = $update->message->from->first_name;
-
-$lastname = $update->message->from->last_name;
-
-$username = $update->message->from->username;
-
-$chattype = $update->message->chat->type;
-
-$message = $update->message->text;
-
-$message_id = $update->message->message_id;
+$content = file_get_contents("php://input");
+$update = json_decode($content, true);
+$chat_id = $update["message"]["chat"]["id"];
+$message = $update["message"]["text"];
+$message_id = $update["message"]["message_id"];
+$id = $update["message"]["from"]["id"];
+$username = $update["message"]["from"]["username"];
+$firstname = $update["message"]["from"]["first_name"];
+$start_msg = $_ENV['START_MSG']; 
 
 $replytomessageis = $update->message->reply_to_message->text;
 
