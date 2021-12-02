@@ -1,7 +1,7 @@
 <?php
 
-require dirname(__FILE__)."/../../config/config.php";
-require_once dirname(__FILE__)."/../../functions/bot.php";
+require dirname(__FILE__)."/../config/config.php";
+require_once dirname(__FILE__)."/../functions/bot.php";
 
 function capture($string, $start, $end)
 {
