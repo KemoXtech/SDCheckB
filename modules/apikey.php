@@ -10,11 +10,11 @@
 */
 
 
-include __DIR__."/../config/config.php";
-include __DIR__."/../config/variables.php";
-include_once __DIR__."/../functions/bot.php";
-include_once __DIR__."/../functions/db.php";
-include_once __DIR__."/../functions/functions.php";
+require dirname(__FILE__)."/../../config/config.php";
+require dirname(__FILE__)."/../../config/variables.php";
+require_once dirname(__FILE__)."/../../functions/bot.php";
+require_once dirname(__FILE__)."/../../functions/db.php";
+require_once dirname(__FILE__)."/../../functions/functions.php";
 
 
 ////////////====[API KEY]====////////////
