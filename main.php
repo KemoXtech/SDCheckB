@@ -1,30 +1,29 @@
 <?php
 
 
-include dirname(__FILE__)."/config/config.php";
-include dirname(__FILE__)."/config/variables.php";
-include dirname(__FILE__)."/functions/bot.php";
-include dirname(__FILE__)."/functions/functions.php";
-include dirname(__FILE__)."/functions/db.php";
+require dirname(__FILE__)."/config/config.php";
+require dirname(__FILE__)."/config/variables.php";
+require dirname(__FILE__)."/functions/bot.php";
+require dirname(__FILE__)."/functions/functions.php";
+require dirname(__FILE__)."/functions/db.php";
 
 
 date_default_timezone_set($config['timeZone']);
 
 
 ////Modules
-include dirname(__FILE__)."/modules/admin.php";
-include dirname(__FILE__)."/modules/skcheck.php";
-include dirname(__FILE__)."/modules/binlookup.php";
-include dirname(__FILE__)."/modules/iban.php";
-include dirname(__FILE__)."/modules/stats.php";
-include dirname(__FILE__)."/modules/me.php";
-include dirname(__FILE__)."/modules/apikey.php";
+require dirname(__FILE__)."/modules/admin.php";
+require dirname(__FILE__)."/modules/skcheck.php";
+require dirname(__FILE__)."/modules/binlookup.php";
+require dirname(__FILE__)."/modules/iban.php";
+require dirname(__FILE__)."/modules/stats.php";
+require dirname(__FILE__)."/modules/me.php";
+require dirname(__FILE__)."/modules/apikey.php";
 
 
-include dirname(__FILE__)."/modules/checker/ss.php";
-include dirname(__FILE__)."/modules/checker/schk.php";
-include dirname(__FILE__)."/modules/checker/sm.php";
-
+require dirname(__FILE__)."/modules/checker/ss.php";
+require dirname(__FILE__)."/modules/checker/schk.php";
+require dirname(__FILE__)."/modules/checker/sm.php";
 
 
 //////////////===[START]===//////////////
